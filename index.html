@@ -1,11 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Avanti</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <div class="top-bar">
+    <p>Ganhe <strong id="value">R$10,00</strong> de desconto no seu primeiro pedido. Utilize o cupom <strong id="descount">DESCONTO10</strong></p>
+  </div>
+
+  <header>
+    <div class="header-top">
+      <a class="menu-button" aria-label="Abrir menu de navegação" href="#">
+        <img src="/assets/hamburguer-menu.svg" alt="Menu">
+      </button>
+
+      <h1 class="site-logo">
+        <a href="#" title="Página Inicial">
+          <img src="assets/avanti-logo.svg" alt="Logo Avanti">
+        </a>
+      </h1>
+
+      <div class="cart-icon">
+        <a href="#" aria-label="Ir para o carrinho de compras">
+          <img src="/assets/cart-icon.svg" alt="Carrinho de Compras">
+        </a>
+        <span class="cart-count">2</span>
+      </div>
+    </div>
+
+    <div class="header-search">
+      <form action="#" method="get">
+        <input 
+          type="search" 
+          id="search-input"
+          name="q"
+          placeholder="Digite aqui o que você procura"
+          aria-label="Campo de busca de produtos"
+        >
+        <button type="submit" aria-label="Buscar">
+          <img src="/assets/search-icon.svg" alt="Buscar">
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <a href="#">
+        <figure>
+          <img src="assets/banner.png" alt="Banner principal do carrossel">
+        </figure>
+      </a>
+      <nav class="carousel-nav" aria-label="Navegação do carrossel">
+        <ul class="carousel-dots">
+          <li>
+            <button class="dot active" aria-label="Mostrar slide 1"></button>
+          </li>
+          <li>
+            <button class="dot" aria-label="Mostrar slide 2"></button>
+          </li>
+          <li>
+            <button class="dot" aria-label="Mostrar slide 3"></button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="new-arrivals">
+      <div class="new-arrivals-header">
+        <h2>Lançamentos</h2>
+        <a href="#" class="see-more">Ver mais</a>
+      </div>
+    
+      <div class="product-carousel">
+        <article class="product-card">
+          <span class="badge badge-new">NOVO</span>
+          <figure class="product-image">
+            <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+          </figure>
+          <h3 class="product-title">
+            Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+          </h3>
+          <div class="product-pricing">
+            <div class="old-price-discount">
+              <p class="old-price">R$ 100,00</p>
+              <span class="badge badge-discount">10% OFF</span>
+            </div>
+            
+            <p class="current-price">R$79,90</p>
+            <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+          </div>
+          <button class="btn-buy">Comprar</button>
+        </article>
+    
+        <article class="product-card">
+          <span class="badge badge-new">NOVO</span>
+          <figure class="product-image">
+            <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+          </figure>
+          <h3 class="product-title">
+            Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+          </h3>
+          <div class="product-pricing">
+            <div class="old-price-discount">
+              <p class="old-price">R$ 100,00</p>
+              <span class="badge badge-discount">10% OFF</span>
+            </div>
+            
+            <p class="current-price">R$79,90</p>
+            <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+          </div>
+          <button class="btn-buy">Comprar</button>
+        </article>
+      </div>
+      <nav class="new-carousel-nav" aria-label="Navegação do carrossel de lançamentos">
+        <ul class="new-carousel-dots">
+          <li>
+            <button class="dot active" aria-label="Mostrar slide 1"></button>
+          </li>
+          <li>
+            <button class="dot" aria-label="Mostrar slide 2"></button>
+          </li>
+          <li>
+            <button class="dot" aria-label="Mostrar slide 3"></button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="cup-showcase">
+      <figure class="cup-figure">
+        <img src="assets/avanti-cup.png" alt="Xícara Avanti">
+      </figure>
+    
+      <article class="cup-article">
+        <h2>LOREM IPSUM</h2>
+        <p>
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <p>
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum 
+          turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. 
+          Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+        </p>
+      </article>
+    </section>
+    
+    <section class="cup-showcase reverse">
+      <figure class="cup-figure">
+        <img src="assets/segundo banner.png" alt="Xícara Avanti em uso">
+      </figure>
+    
+      <article class="info-section">
+        <h2>LOREM IPSUM</h2>
+    
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="assets/map-pin.svg" alt="Ícone de local">
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+    
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="assets/map-pin.svg" alt="Ícone de local">
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+    
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="assets/map-pin.svg" alt="Ícone de local">
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+      </article>
+    </section>
+    
+    <section class="cup-showcase">
+      <figure class="cup-figure">
+        <img src="assets/avanti-cup.png" alt="Xícara Avanti">
+      </figure>
+    
+      <article class="cup-article">
+        <h2>LOREM IPSUM</h2>
+        <p>
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <p>
+          Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum 
+          turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. 
+          Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.
+        </p>
+      </article>
+    </section>
+    
+    <section class="contact-banner">
+      <div class="company-banner">
+        <figure class="company-figure">
+          <img src="assets/avanti-company.png" alt="Interior da empresa Avanti">
+        </figure>
+        <div class="contact-message">
+          <span>Entre em contato conosco e verifique a disponibilidade para sua região!</span>
+        </div>
+      </div>      
+
+      <div class="newsletter-container">
+        <h2>Cadastre-se na nossa <span>newsletter</span></h2>
+      
+        <form action="#" id="newsletter-form" method="post">
+          <input 
+            type="text" 
+            placeholder="Digite seu nome" 
+            name="nome" 
+            id="nome"
+          >
+          <input 
+            type="email" 
+            placeholder="Digite seu e-mail" 
+            name="email" 
+            id="email"
+          >
+          
+          <label for="agree">
+            <input 
+              type="checkbox" 
+              name="agree" 
+              id="agree"
+            >
+            <span>Estou de acordo com a 
+              <a href="#">Política de Privacidade</a></span>
+          </label>
+      
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-section">
+      <a href="#" class="logo">
+        <img src="assets/avanti-logo.svg" alt="Logo Avanti">
+      </a>
+    
+      <div class="social-icons">
+        <a href="#">
+          <img src="assets/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#">
+          <img src="assets/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#">
+          <img src="assets/youtube-logo.svg" alt="YouTube">
+        </a>
+        <a href="#">
+          <img src="assets/logo-tiktok-svgrepo-com.svg" alt="TikTok">
+        </a>
+      </div>
+    </div>
+    
+    <div class="accordion-group">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h5>Institucional</h5>
+          <button class="accordion-toggle" aria-label="Expandir">
+            <img src="assets/iconmonstr-arrow-25.svg" alt="Seta para abrir ou fechar">
+          </button>
+        </div>
+        <div class="accordion-content" hidden>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossas Lojas</a></li>
+            <li><a href="#">Privacidade e Segurança</a></li>
+            <li><a href="#">Termos e Condições</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h5>Central de ajuda</h5>
+          <button class="accordion-toggle" aria-label="Expandir">
+            <img src="assets/iconmonstr-arrow-25.svg" alt="Seta para abrir ou fechar">
+          </button>
+        </div>
+        <div class="accordion-content" hidden>
+          <ul>
+            <li><a href="#">Fale Conosco</a></li>
+            <li><a href="#">Frete e Entrega</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Formas de Pagamento</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h5>Atendimento</h5>
+          <button class="accordion-toggle" aria-label="Expandir">
+            <img src="assets/iconmonstr-arrow-25.svg" alt="Seta para abrir ou fechar">
+          </button>
+        </div>
+        <div class="accordion-content" hidden>
+          <ul>
+            <li><strong>Telefone:</strong> (00) 1234-5678</li>
+            <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+            <li><strong>Horário de atendimento:</strong> Segunda a Sábado: 07h00 às 23:00 | Domingos e Feriados: 07h00 às 21:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-icons">
+      <div class="payment-row">
+        <img src="assets/amex.svg" alt="American Express">
+        <img src="assets/União 32.svg" alt="Mastercard">
+        <img src="assets/visa.svg" alt="Visa">
+        <img src="assets/hipercard.svg" alt="Hipercard">
+        <img src="assets/b-1.svg" alt="Elo">
+      </div>
+      <div class="payment-row">
+        <img src="assets/b.svg" alt="Diners Club">
+        <img src="assets/União 332.svg" alt="Outro Cartão">
+        <img src="assets/paypal-seeklogo.com.svg" alt="PayPal">
+        <img src="assets/icon-boleto.svg" alt="Boleto">
+      </div>
+    </div>
+
+    <div class="certification-section">
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+        Ut wisi enim ad minim veniam, quis nostrud exerci.
+      </p>
+    
+      <div class="certification-logos">
+        <img src="assets/lets-encrypt.png" alt="Let's Encrypt">
+        <img src="assets/vtex-pci-200.png" alt="VTEX PCI Certification">
+        <img src="assets/Frame 14.png" alt="Pay Certified by VTEX">
+        <img src="assets/VTEX_Logo (1) 1.png" alt="VTEX Logo">
+      </div>
+    </div>    
+    
+  </footer>
 </body>
 </html>
