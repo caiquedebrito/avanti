@@ -717,6 +717,9 @@ footer {
 }
 
 .payment-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 2rem 1rem;  
   background-color: #f9f9f9;
@@ -769,4 +772,93 @@ footer {
 
 .certification-logos img:hover {
   transform: scale(1.05);
+}
+
+.desktop-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 24px;
+}
+
+.desktop-header-top > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desktop-header-left {
+  gap: 5rem;
+  max-width: 1340px;
+}
+
+.desktop-header-right {
+  max-width: 200px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.user-info .user-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.desktop-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-nav ul a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+#categories-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+#categories-link img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .payment-icons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 565px) {
+  header {
+    top: 37px;
+  }
 }

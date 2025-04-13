@@ -16,38 +16,101 @@
   </div>
 
   <header>
-    <div class="header-top">
-      <a class="menu-button" aria-label="Abrir menu de navegação" href="#">
-        <img src="/assets/hamburguer-menu.svg" alt="Menu">
-      </button>
-
-      <h1 class="site-logo">
-        <a href="#" title="Página Inicial">
-          <img src="assets/avanti-logo.svg" alt="Logo Avanti">
+    <div class="mobile-header">
+      <div class="header-top">
+        <a class="menu-button" aria-label="Abrir menu de navegação" href="#">
+          <img src="/assets/hamburguer-menu.svg" alt="Menu">
         </a>
-      </h1>
-
-      <div class="cart-icon">
-        <a href="#" aria-label="Ir para o carrinho de compras">
-          <img src="/assets/cart-icon.svg" alt="Carrinho de Compras">
-        </a>
-        <span class="cart-count">2</span>
+  
+        <h1 class="site-logo">
+          <a href="#" title="Página Inicial">
+            <img src="assets/avanti-logo.svg" alt="Logo Avanti">
+          </a>
+        </h1>
+  
+        <div class="cart-icon">
+          <a href="#" aria-label="Ir para o carrinho de compras">
+            <img src="/assets/cart-icon.svg" alt="Carrinho de Compras">
+          </a>
+          <span class="cart-count">2</span>
+        </div>
+      </div>
+  
+      <div class="header-search">
+        <form action="#" method="get">
+          <input 
+            type="search" 
+            id="search-input"
+            name="q"
+            placeholder="Digite aqui o que você procura"
+            aria-label="Campo de busca de produtos"
+          >
+          <button type="submit" aria-label="Buscar">
+            <img src="/assets/search-icon.svg" alt="Buscar">
+          </button>
+        </form>
       </div>
     </div>
 
-    <div class="header-search">
-      <form action="#" method="get">
-        <input 
-          type="search" 
-          id="search-input"
-          name="q"
-          placeholder="Digite aqui o que você procura"
-          aria-label="Campo de busca de produtos"
-        >
-        <button type="submit" aria-label="Buscar">
-          <img src="/assets/search-icon.svg" alt="Buscar">
-        </button>
-      </form>
+    <div class="desktop-header">
+      <div class="desktop-header-top">
+        <div class="desktop-header-left">
+          <a href="#" title="Página Inicial" class="logo-link">
+            <img src="assets/avanti-logo.svg" alt="Logo Avanti" class="logo-image">
+          </a>
+          <div class="header-search">
+            <form action="#" method="get">
+              <input 
+                type="search" 
+                id="search-input"
+                name="q"
+                placeholder="Digite aqui o que você procura"
+                aria-label="Campo de busca de produtos"
+              >
+              <button type="submit" aria-label="Buscar">
+                <img src="/assets/search-icon.svg" alt="Buscar">
+              </button>
+            </form>
+          </div>
+        </div>
+  
+        <div class="desktop-header-right">
+          <div class="user-info">
+            <a href="#" class="user-avatar">
+              <img src="assets/noun-person.svg" alt="Ícone de usuário" class="user-icon">
+            </a>
+            <div class="user-greeting">
+              Olá, <span>Nome Cliente!</span>
+            </div>
+          </div>
+          
+          <div class="cart-icon">
+            <a href="#" aria-label="Ir para o carrinho de compras" class="cart-link">
+              <img src="/assets/cart-icon.svg" alt="Carrinho de Compras" class="cart-image">
+            </a>
+            <span class="cart-count">2</span>
+          </div>
+        </div>
+      </div>
+  
+      <nav class="desktop-nav">
+        <ul>
+          <li>
+              <a href="" id="categories-link">
+              <img src="assets/hamburguer-menu.svg" alt="">
+              Todas as categorias
+              </a>
+          </li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+          <li><a href="">Departamento</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
