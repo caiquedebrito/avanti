@@ -182,11 +182,56 @@ main {
 .hero-banner {
   position: relative;
   overflow: hidden;
+  background-color: #E7E7EA;
+  max-height: 510px;
 }
 
 .carousel {
   width: 100%;
   position: relative;
+  max-width: 1200px;
+}
+
+.carousel a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+.carousel div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.carousel h1 strong {
+  font-weight: 700;
+  display: block;
+}
+
+.carousel p {
+  font-size: 12px;
+  color: #005CFF;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.carousel p strong {
+  display: block;
+  font-size: 32px;
+  margin-top: inherit;
 }
 
 .hero-banner figure,
@@ -268,10 +313,40 @@ main {
 }
 
 .product-carousel {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 1rem;
   padding-bottom: 1rem;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  padding: .6rem;
+  border-radius: 50%;
+  border: solid var(--color-primary) .5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: -50px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-button.next {
+  right: -50px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-button.next img {
+  transform: rotate(180deg);
 }
 
 .product-card {
@@ -313,7 +388,6 @@ main {
   margin-bottom: 1rem;
   text-align: center;
   width: 100%;
-  height: 160px;  
   overflow: hidden;
 }
 
@@ -324,10 +398,15 @@ main {
 }
 
 .product-title {
-  font-size: 1rem;
   color: #333;
   margin-bottom: 0.75rem;
   line-height: 1.3;
+  font-family: Nunito Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+
 }
 
 .product-pricing {
@@ -411,17 +490,25 @@ main {
   background-color: #333;
 }
 
-.cup-showcase {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cup-showcase .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 3rem auto;
 }
 
 .cup-figure {
   text-align: center;
+  background-color: #C2C2C2;
 }
 
 .cup-figure img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   object-fit: contain;
 }
@@ -460,12 +547,13 @@ main {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #4F4F4F;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 26px;
   margin-bottom: 1.5rem;
 }
 
@@ -479,8 +567,8 @@ main {
 }
 
 .info-icon img {
-  width: 24px;
-  height: 24px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
@@ -491,8 +579,13 @@ main {
 }
 
 .company-banner {
+  background-image: url('./assets/avanti-company.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  height: 660px;
 }
 
 .company-figure {
@@ -774,6 +867,11 @@ footer {
   transform: scale(1.05);
 }
 
+.desktop-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .desktop-header-top {
   display: flex;
   align-items: center;
@@ -809,6 +907,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 14px;
 }
 
 .desktop-nav ul {
@@ -824,7 +923,7 @@ footer {
   color: var(--color-text);
   font-size: 14px;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
 }
 
 #categories-link {
@@ -835,25 +934,158 @@ footer {
   font-weight: bold;
 }
 
+#categories-link:hover {
+  color: #007BFF;
+}
+
+
 #categories-link img {
   width: 16px;
   height: 16px;
   object-fit: contain;
 }
 
+.footer-links {
+  display: none;
+  gap: 3rem;
+}
+
+.footer-section__list {
+  list-style: none;
+  line-height: 1.8rem;
+}
+
+.footer-section__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.footer-section__title {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 768px) {
   .desktop-header {
     display: none;
-  }
-
-  .payment-icons {
-    flex-direction: row;
   }
 }
 
 @media (min-width: 768px) {
   .mobile-header {
     display: none;
+  }
+
+  .accordion-group {
+    display: none;
+  }
+
+  .hero-banner figure,
+  .hero-banner img {
+    display: block;
+    width: auto;
+  }
+
+  .carousel h1 {
+    font-size: 100px;
+  }
+
+  .carousel p strong {
+    font-size: 60px;
+  }
+
+  .carousel h1 strong {
+    display: inline;
+  }
+
+  .carousel p {
+    font-size: 25px;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .cup-showcase .container {
+    padding: 3rem 1rem;
+  }
+
+  .hero-banner .container {
+    padding: 0;
+  }
+
+  .cup-showcase .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cup-showcase .container h2 {
+    font-size: 30px;
+  }
+
+  .cup-showcase .container p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .reverse .container {
+    flex-direction: row-reverse;
+  }
+
+  .contact-message {
+    font-size: 30px;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #newsletter-form {
+    flex-direction: row;
+  }
+
+  #newsletter-form button {
+    width: fit-content;
+    padding: 14px 24px;
+  }
+
+  /* footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  footer .container > :nth-child(3) {
+    grid-column: 1 / -1;
+  } */
+
+  footer .contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+  }
+
+  .social-section {
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .payment-icons {
+    flex-direction: row;
+  }
+
+  .payment-row {
+    margin-bottom: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 6rem;
   }
 }
 

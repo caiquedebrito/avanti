@@ -25,26 +25,26 @@ accordionItems.forEach(item => {
   });
 });
 
-const slidesContainer = document.querySelector('.carousel-slides');
-const dots = document.querySelectorAll('.carousel-dots .dot');
-const totalSlides = dots.length;
-let currentSlide = 0;
+// const slidesContainer = document.querySelector('.carousel-slides');
+// const dots = document.querySelectorAll('.carousel-dots .dot');
+// const totalSlides = dots.length;
+// let currentSlide = 0;
 
-function goToSlide(index) {
-  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-  currentSlide = index;
-}
+// function goToSlide(index) {
+//   slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+//   dots.forEach((dot, i) => {
+//     dot.classList.toggle('active', i === index);
+//   });
+//   currentSlide = index;
+// }
 
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    goToSlide(index);
-  });
-});
+// dots.forEach((dot, index) => {
+//   dot.addEventListener('click', () => {
+//     goToSlide(index);
+//   });
+// });
 
-setInterval(() => {
-  let nextSlide = (currentSlide + 1) % totalSlides;
-  goToSlide(nextSlide);
-}, 5000);
+// setInterval(() => {
+//   let nextSlide = (currentSlide + 1) % totalSlides;
+//   goToSlide(nextSlide);
+// }, 5000);
