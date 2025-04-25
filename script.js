@@ -1,31 +1,31 @@
-const accordionItems = document.querySelectorAll('.accordion-item');
+document.addEventListener("DOMContentLoaded", function() {
+  const accordionItems = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-  const header = item.querySelector('.accordion-header');
-  const toggle = item.querySelector('.accordion-toggle');
-  const content = item.querySelector('.accordion-content');
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const toggle = item.querySelector('.accordion-toggle');
+    const content = item.querySelector('.accordion-content');
 
-  header.addEventListener('click', () => {
-    accordionItems.forEach(i => {
-      const c = i.querySelector('.accordion-content');
-      const t = i.querySelector('.accordion-toggle');
-      if(i !== item) {
-        c.setAttribute('hidden', '');
-        t.classList.remove('expanded');
+    header.addEventListener('click', () => {
+      accordionItems.forEach(i => {
+        const c = i.querySelector('.accordion-content');
+        const t = i.querySelector('.accordion-toggle');
+        if(i !== item) {
+          c.setAttribute('hidden', '');
+          t.classList.remove('expanded');
+        }
+      });
+
+      if(content.hasAttribute('hidden')) {
+        content.removeAttribute('hidden');
+        toggle.classList.add('expanded');
+      } else {
+        content.setAttribute('hidden', '');
+        toggle.classList.remove('expanded');
       }
     });
-
-    if(content.hasAttribute('hidden')) {
-      content.removeAttribute('hidden');
-      toggle.classList.add('expanded');
-    } else {
-      content.setAttribute('hidden', '');
-      toggle.classList.remove('expanded');
-    }
   });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
   var searchForms = document.querySelectorAll(".header-search form");
   searchForms.forEach(function(form) {
       form.addEventListener("submit", function(e) {
@@ -42,33 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
           resultElement.textContent = message;
       });
   });
-
-  new Glider(document.querySelector('.glider'), {
-      gap: 10,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      draggable: true,
-      arrows: {
-        prev: '.carousel-button.prev',
-        next: '.carousel-button.next'
-      },
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        }
-      ]
-    });
 });
 
 (function() {

@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avanti</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -179,130 +182,142 @@
           <a href="#" class="see-more">Ver mais</a>
         </div>
       
-        <div class="product-carousel">
-          <button class="carousel-button prev" aria-label="Voltar">
-            <img src="/assets/iconmonstr-arrow.svg" alt="">
-          </button>
-          <button class="carousel-button next" aria-label="Avançar">
-            <img src="/assets/iconmonstr-arrow.svg" alt="">
-          </button>
-          
-          <div class="product-list" id="list1">
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-        
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
+        <div class="container swiper">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
           </div>
-
         </div>
-        <nav class="new-carousel-nav" aria-label="Navegação do carrossel de lançamentos">
-          <ul class="new-carousel-dots">
-            <li>
-              <button class="dot active" aria-label="Mostrar slide 1"></button>
-            </li>
-            <li>
-              <button class="dot" aria-label="Mostrar slide 2"></button>
-            </li>
-            <li>
-              <button class="dot" aria-label="Mostrar slide 3"></button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </section>
 
@@ -403,129 +418,142 @@
           <a href="#" class="see-more">Ver mais</a>
         </div>
       
-        <div class="product-carousel">
-          <button class="carousel-button prev" aria-label="Voltar">
-            <img src="/assets/iconmonstr-arrow.svg" alt="">
-          </button>
-          <button class="carousel-button next" aria-label="Avançar">
-            <img src="/assets/iconmonstr-arrow.svg" alt="">
-          </button>
-          <div class="product-list" id="list2">
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-        
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
-  
-            <article class="product-card">
-              <span class="badge badge-new">NOVO</span>
-              <figure class="product-image">
-                <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
-              </figure>
-              <h3 class="product-title">
-                Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
-              </h3>
-              <div class="product-pricing">
-                <div class="old-price-discount">
-                  <p class="old-price">R$ 100,00</p>
-                  <span class="badge badge-discount">10% OFF</span>
-                </div>
-                
-                <p class="current-price">R$79,90</p>
-                <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
-              </div>
-              <button class="btn-buy">Comprar</button>
-            </article>
+        <div class="container swiper">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+              <li class="card-item swiper-slide">
+                <article class="product-card">
+                  <span class="badge badge-new">NOVO</span>
+                  <figure class="product-image">
+                    <img src="assets/camiseta.png" alt="Camiseta Masculina Branca">
+                  </figure>
+                  <h3 class="product-title">
+                    Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit
+                  </h3>
+                  <div class="product-pricing">
+                    <div class="old-price-discount">
+                      <p class="old-price">R$ 100,00</p>
+                      <span class="badge badge-discount">10% OFF</span>
+                    </div>
+                    
+                    <p class="current-price">R$79,90</p>
+                    <p class="installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  </div>
+                  <button class="btn-buy">Comprar</button>
+                </article>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
           </div>
-
         </div>
-        <nav class="new-carousel-nav" aria-label="Navegação do carrossel de lançamentos">
-          <ul class="new-carousel-dots">
-            <li>
-              <button class="dot active" aria-label="Mostrar slide 1"></button>
-            </li>
-            <li>
-              <button class="dot" aria-label="Mostrar slide 2"></button>
-            </li>
-            <li>
-              <button class="dot" aria-label="Mostrar slide 3"></button>
-            </li>
-          </ul>
-        </nav>
       </div>
     </section>
     
@@ -711,5 +739,10 @@
       </div>
     </div> 
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="./swiper.js"></script>
 </body>
 </html>
