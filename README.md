@@ -1,0 +1,63 @@
+# 🚀 Projeto 01 – Desenvolvimento do Layout
+
+![Badge Responsivo](https://img.shields.io/badge/responsivo-%E2%9C%85-brightgreen)
+![Badge Mobile First](https://img.shields.io/badge/mobile--first-%E2%9C%85-blue)
+![Badge Vanilla](https://img.shields.io/badge/sem%20frameworks-Vanilla%20JS%2FCSS%2FHTML-orange)
+
+## 📝 Descrição
+
+Este projeto foi desenvolvido como parte de um desafio para replicar com fidelidade um layout disponibilizado no Figma, utilizando **HTML**, **CSS** e **JavaScript puro (sem bibliotecas ou frameworks)**.
+
+O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **experiência fluida e responsiva** em diferentes tamanhos de tela.
+
+---
+
+## 🎯 Objetivo
+
+> Reproduzir o layout proposto no Figma e implementar funcionalidades interativas usando apenas tecnologias nativas da web.
+
+🔗 **Layout no Figma**:  
+[Visualizar o layout original](https://www.figma.com/proto/DqtFxC6312M32mLt8FpJjq/innovation-class?page-id=13%3A673&node-id=13-920&viewport=346%2C140%2C0.11&t=HyGGDSs83f1vbqMJ-1&scaling=scale-down&content-scaling=fixed)
+
+🔗 **Projeto no ar**:  
+[Acesse aqui o site publicado](https://seusiteaqui.com) <!-- Substitua pelo link real de deploy -->
+
+---
+
+## ✅ Funcionalidades Implementadas
+
+- Estruturação completa do layout com HTML semântico
+- Estilização com CSS puro e abordagem **mobile-first**
+- Layout **totalmente responsivo** (mobile, tablet e desktop)
+- Campo de busca funcional com JavaScript:
+  - Ao clicar no botão de busca, aparece: `Você buscou por: 'assunto buscado'`
+- Carrosséis interativos com JavaScript (sem bibliotecas externas)
+
+---
+
+## 📁 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+> 💡 Nenhum framework CSS ou JS foi utilizado.
+
+---
+
+## 💡 Aprendizados
+
+- Prática com desenvolvimento responsivo mobile-first
+- Manipulação do DOM e eventos com JavaScript puro
+- Controle de layout dinâmico via JavaScript conforme o `resize`
+- Organização de estrutura de arquivos e código limpo
+
+---
+
+## 📸 Preview
+
+> 
+
+---
+
+### ✨ Sinta-se à vontade para clonar, testar, dar sugestões ou abrir issues!  
