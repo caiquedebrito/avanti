@@ -118,9 +118,10 @@ header {
 .header-search {
   width: 100%;
   margin: 0 auto;
+  min-height: 60px;
 }
 
-.header-search form {
+.header-search form div {
   position: relative;
   display: block;
   width: 100%;
@@ -190,6 +191,7 @@ main {
   width: 100%;
   position: relative;
   max-width: 1200px;
+  overflow: hidden;
 }
 
 .carousel a {
@@ -197,14 +199,6 @@ main {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-}
-
-.carousel div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .carousel h1 {
@@ -238,11 +232,20 @@ main {
 .hero-banner img {
   width: 100%;
   display: block;
+  min-width: 300px;
 }
 
 .carousel-slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slides div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .carousel-slides a {
@@ -314,10 +317,16 @@ main {
 
 .product-carousel {
   position: relative;
+  /* overflow: hidden; */
+}
+
+.product-list {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1rem;
   padding-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .carousel-button {
@@ -507,8 +516,13 @@ main {
   background-color: #C2C2C2;
 }
 
+.reverse .cup-figure {
+  background-color: transparent;
+}
+
 .cup-figure img {
-  /* width: 100%; */
+  width: 100%;
+  min-width: 350px;
   height: auto;
   object-fit: contain;
 }
@@ -538,7 +552,7 @@ main {
 
 .info-section {
   padding: 2rem 1rem; 
-  max-width: 800px;
+  max-width: 550px;
   margin: 0 auto;    
 }
 
@@ -611,6 +625,10 @@ main {
   padding: 1rem;
   color: #fff;
   font-size: 1.1rem;
+}
+
+.new-arrivals.second {
+  display: none;
 }
 
 .newsletter-container {
@@ -982,12 +1000,6 @@ footer {
     display: none;
   }
 
-  .hero-banner figure,
-  .hero-banner img {
-    display: block;
-    width: auto;
-  }
-
   .carousel h1 {
     font-size: 100px;
   }
@@ -1000,13 +1012,17 @@ footer {
     display: inline;
   }
 
+  .new-arrivals.second {
+    display: block;
+  }
+
   .carousel p {
     font-size: 25px;
   }
 
-  .container {
+  /* .container {
     padding: 3rem;
-  }
+  } */
 
   .cup-showcase .container {
     padding: 3rem 1rem;
