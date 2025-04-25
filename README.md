@@ -20,7 +20,7 @@ O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **exp
 [Visualizar o layout original](https://www.figma.com/proto/DqtFxC6312M32mLt8FpJjq/innovation-class?page-id=13%3A673&node-id=13-920&viewport=346%2C140%2C0.11&t=HyGGDSs83f1vbqMJ-1&scaling=scale-down&content-scaling=fixed)
 
 🔗 **Projeto no ar**:  
-[Acesse aqui o site publicado](https://seusiteaqui.com) <!-- Substitua pelo link real de deploy -->
+[Acesse aqui o site publicado](https://caiquedebrito.github.io/avanti/)
 
 ---
 
