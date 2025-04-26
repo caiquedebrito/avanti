@@ -1058,7 +1058,7 @@ footer .container {
   }
 
   .cup-showcase .container p {
-    font-size: 18px;
+    font-size: min(18px, 1.8vw);
     line-height: 1.6;
   }
 
@@ -1127,7 +1127,7 @@ footer .container {
   }
 }
 
-@media screen and (min-width: 565px) {
+@media screen and (min-width: 580px) {
   header {
     top: 37px;
   }
