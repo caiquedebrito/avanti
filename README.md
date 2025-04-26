@@ -31,7 +31,7 @@ O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **exp
 - Layout **totalmente responsivo** (mobile, tablet e desktop)
 - Campo de busca funcional com JavaScript:
   - Ao clicar no botão de busca, aparece: `Você buscou por: 'assunto buscado'`
-- Carrosséis interativos com JavaScript (sem bibliotecas externas)
+- Carrosséis interativos com JavaScript
 
 ---
 
@@ -40,6 +40,7 @@ O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **exp
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
+- Biblioteca Swiper API
 
 > 💡 Nenhum framework CSS ou JS foi utilizado.
 
