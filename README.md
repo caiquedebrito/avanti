@@ -10,6 +10,7 @@ Este projeto foi desenvolvido como parte de um desafio para replicar com fidelid
 
 O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **experiência fluida e responsiva** em diferentes tamanhos de tela.
 
+[Veja o projeto Aqui👆](https://caiquedebrito.github.io/avanti/)
 ---
 
 ## 🎯 Objetivo
