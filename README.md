@@ -59,7 +59,9 @@ O foco principal foi adotar uma **abordagem mobile-first**, garantindo uma **exp
 
 ## 📸 Preview
 
-> 
+![Image](https://github.com/user-attachments/assets/2af9b13d-fd8a-4370-a747-42c4f2a0b645)
+
+![Image](https://github.com/user-attachments/assets/980b1ca4-6d60-4f14-8398-a01edf2b9bd9)
 
 ---
 
