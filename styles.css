@@ -176,7 +176,7 @@ header {
 }
 
 main {
-  margin-top: 174px;
+  margin-top: 190px;
 }
 
 .hero-banner {
@@ -205,6 +205,7 @@ main {
   color: black;
   font-weight: 300;
   line-height: 40px;
+  margin-bottom: 12px;
 }
 
 .carousel h1 strong {
@@ -218,7 +219,6 @@ main {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: 600;
-  margin-top: 12px;
 }
 
 .carousel p strong {
@@ -231,7 +231,6 @@ main {
 .hero-banner img {
   width: 100%;
   display: block;
-  min-width: 300px;
 }
 
 .carousel-slides {
@@ -287,8 +286,8 @@ main {
 }
 
 .new-arrivals {
-  margin: 2rem 1rem;
-  padding: 1rem;
+  margin: 2rem 0;
+  padding: 0 .5rem;
 }
 
 .new-arrivals-header {
@@ -783,8 +782,8 @@ footer {
 }
 
 .accordion-item {
-  border: 1px solid #eee;
-  overflow: hidden;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;  overflow: hidden;
 }
 
 .accordion-header {
@@ -1026,12 +1025,6 @@ footer .container {
   padding: 2rem;
 }
 
-@media (max-width: 768px) {
-  .desktop-header {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .mobile-header {
     display: none;
@@ -1041,24 +1034,8 @@ footer .container {
     display: none;
   }
 
-  .carousel h1 {
-    font-size: 100px;
-  }
-
-  .carousel p strong {
-    font-size: 60px;
-  }
-
-  .carousel h1 strong {
-    display: inline;
-  }
-
   .new-arrivals.second {
     display: block;
-  }
-
-  .carousel p {
-    font-size: 25px;
   }
 
   .cup-showcase .container {
@@ -1132,9 +1109,47 @@ footer .container {
   }
 }
 
+@media (min-width: 768px) {
+  .carousel h1 {
+    font-size: min(100px, 8vw);
+  }
+
+  .carousel p {
+    font-size: min(22px, 3vw);
+  }
+
+  .carousel p strong {
+    font-size: min(60px, 4vw);
+  }
+
+  .carousel h1 strong {
+    display: inline;
+  }
+}
+
 @media screen and (min-width: 565px) {
   header {
     top: 37px;
+  }
+}
+
+@media (max-width: 568px) {
+  main {
+    margin-top: 224px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    padding: 0;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  main {
+    margin-top: 208px;
   }
 }
 
@@ -1155,3 +1170,15 @@ footer .container {
     font-size: 1rem;
   }
 } 
+
+@media (max-width: 900px) {
+  footer .contact-section, .footer-links {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    margin-top: 224px;
+  }
+}
